@@ -27,7 +27,7 @@ class PublicController extends Controller
 
 
         Mail::to($email)->send(new FormMail);
-        dd($request->all());
+        return redirect(route('Contacts')/* ->with('status', 'Email-sent!') */);
     }
 
 }

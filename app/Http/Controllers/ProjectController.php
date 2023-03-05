@@ -26,7 +26,7 @@ class ProjectController extends Controller
     public function showProjectDetailPage($id){
         foreach($this->projects as $project){
             if($project['id'] == $id){
-                return view('project-page', ['project'=>$project]);
+                return view('components.project-page', ['project'=>$project]);
             }
         }
     }

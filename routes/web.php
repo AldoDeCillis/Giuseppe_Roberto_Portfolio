@@ -21,5 +21,5 @@ Route::get('/contacts', [PublicController::class, 'showContacts'])->name('Contac
 Route::post('/contacts/submit', [PublicController::class, 'submitForm'])->name('Submit');
 
 Route::get('/projects', [ProjectController::class, 'showProjectView'])->name('Projects');
-Route::get('/projects/project/{$id}', [ProjectController::class, 'showProject'])->name('Project');
-Route::get('/projects/project-page/{$id}', [ProjectController::class, 'showProjectDetailPage'])->name('Project-page');
+Route::get('/projects/project/{id}', [ProjectController::class, 'showProject'])->name('Project');
+Route::get('/projects/project-page/{id}', [ProjectController::class, 'showProjectDetailPage'])->name('Project-page');
